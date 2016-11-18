@@ -23,9 +23,18 @@ public:
 
 		
 private:
+   // functions
+   void OpenDoor();
+   
+   // members
    UPROPERTY(VisibleAnywhere)
    float OpenAngle = 90.f;
    
    UPROPERTY(EditAnywhere)
    ATriggerVolume* PressurePlate;
+   
+   UPROPERTY(EditAnywhere)
+   AActor* ActorThatOpens; // Remember pawn inherits from actor
+   
+   
 };
