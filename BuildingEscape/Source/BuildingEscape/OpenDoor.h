@@ -26,6 +26,7 @@ private:
    // functions
    void OpenDoor();
    void CloseDoor();
+   float GetTotalMassofActorsOnPlate(); // returns total mass in kg
    
    // members
    UPROPERTY(EditAnywhere)
@@ -39,6 +40,5 @@ private:
    
    float LastDoorOpenTime = 0.f;
    
-   AActor* ActorThatOpens; // Remember pawn inherits from actor
    AActor* Owner; // The owning door
 };
